@@ -1,0 +1,570 @@
+{
+  "vite/modulepreload-polyfill": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "css/default.css": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "vite/preload-helper": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/utils/capital-case.js": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/post-container/menu-container.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/post-container/menu-container.vue?vue&type=style&index=0&scoped=true&lang.postcss": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/post-container/menu-container.vue": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/utils/handle-modules.js": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "@my-virtual-file": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/post-container/index.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/post-container/index.vue?vue&type=style&index=0&scoped=true&lang.postcss": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/post-container/index.vue": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/pages/index.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/pages/index.vue?vue&type=style&index=0&scoped=true&lang.postcss": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/pages/index.vue": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "../../../../../@vite-plugin-pages/generated-pages": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/index.css": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/logo/logo.svg": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/TopBar.vue?vue&type=style&index=0&scoped=true&lang.postcss": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/TopBar.vue": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/icons/instagram.png": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/icons/twitter.webp": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/icons/linkedin.png": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/icons/spotify.png": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/icons/medium.png": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/icons/github.svg": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "assets/images/icons/gitlab.webp": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/Footer.vue?vue&type=style&index=0&scoped=true&lang.postcss": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/components/Footer.vue": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/App.vue": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "src/main.ts": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "index.html": [
+    "/assets/logo.52d92a3a.svg",
+    "/assets/instagram.69fd5da2.png",
+    "/assets/twitter.b8e4cb07.webp",
+    "/assets/linkedin.f075391e.png",
+    "/assets/spotify.2d6619f9.png",
+    "/assets/medium.e2b84950.png",
+    "/assets/github.223c4cd2.svg",
+    "/assets/gitlab.72257833.webp"
+  ],
+  "node_modules/@vue/shared/dist/shared.esm-bundler.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/reactivity/dist/reactivity.esm-bundler.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/runtime-core/dist/runtime-core.esm-bundler.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/runtime-dom/dist/runtime-dom.esm-bundler.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/vue/dist/vue.runtime.esm-bundler.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/vite-ssg/dist/chunk-YPUM4SRK.mjs": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/vite-ssg/dist/chunk-SO7PDUCV.mjs": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/env.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/const.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/api.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/app.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/component.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/context.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/hooks.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/util.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/api/index.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vue/devtools-api/lib/esm/index.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/vue-router/dist/vue-router.esm-bundler.js": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/@vueuse/head/dist/index.mjs": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "node_modules/vite-ssg/dist/index.mjs": [
+    "/assets/vendor.4e7fec17.js"
+  ],
+  "src/pages/thoughts/web/partial-hydration.md": [
+    "/assets/partial-hydration.6f926fd2.js"
+  ],
+  "src/pages/thoughts/stats-de-landing.md": [
+    "/assets/stats-de-landing.a001c0d7.js"
+  ],
+  "assets/images/pics/projects/vaul-gif.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "assets/images/pics/projects/igfe-gif.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "assets/images/pics/projects/payment-gif.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "assets/images/pics/projects/auth.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "assets/images/pics/projects/mini-crm.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "assets/images/pics/projects/cruz-proto.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "assets/images/pics/projects/somos-tribu.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "assets/images/pics/projects/kitten-store.gif": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "src/pages/projects.vue?vue&type=style&index=0&scoped=true&lang.postcss": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "src/pages/projects.vue": [
+    "/assets/projects.ed54eaf3.js",
+    "/assets/projects.a01f4356.css",
+    "/assets/vaul-gif.2d414d49.gif",
+    "/assets/igfe-gif.c73eec88.gif",
+    "/assets/payment-gif.745ca6cd.gif",
+    "/assets/auth.2bec7077.gif",
+    "/assets/mini-crm.9c3954e3.gif",
+    "/assets/cruz-proto.e8961ad2.gif",
+    "/assets/somos-tribu.4bf0ae55.gif",
+    "/assets/kitten-store.14bed772.gif"
+  ],
+  "src/content.json": [
+    "/assets/blog.1afc7260.js",
+    "/assets/blog.66699466.css"
+  ],
+  "src/components/head-bar.vue?vue&type=script&setup=true&lang.ts": [
+    "/assets/blog.1afc7260.js",
+    "/assets/blog.66699466.css"
+  ],
+  "src/components/head-bar.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/blog.1afc7260.js",
+    "/assets/blog.66699466.css"
+  ],
+  "src/components/head-bar.vue": [
+    "/assets/blog.1afc7260.js",
+    "/assets/blog.66699466.css"
+  ],
+  "src/pages/blog.vue?vue&type=style&index=0&lang.postcss": [
+    "/assets/blog.1afc7260.js",
+    "/assets/blog.66699466.css"
+  ],
+  "src/pages/blog.vue": [
+    "/assets/blog.1afc7260.js",
+    "/assets/blog.66699466.css"
+  ],
+  "src/pages/blog/index.vue": [
+    "/assets/index.8b9a83d2.js"
+  ],
+  "src/pages/blog/english/need-a-bundle.md": [
+    "/assets/need-a-bundle.66c50d36.js"
+  ],
+  "src/pages/blog/spanish/bienvenidos.md": [
+    "/assets/bienvenidos.d259bda9.js"
+  ],
+  "assets/images/vite-vanilla-js/js-doc-implementation.png": [
+    "/assets/vite-vanilla-js.24b6f7b9.js",
+    "/assets/js-doc-implementation.8e6878d3.png",
+    "/assets/type-module.470b9b6a.gif"
+  ],
+  "assets/images/vite-vanilla-js/type-module.gif": [
+    "/assets/vite-vanilla-js.24b6f7b9.js",
+    "/assets/js-doc-implementation.8e6878d3.png",
+    "/assets/type-module.470b9b6a.gif"
+  ],
+  "src/pages/blog/english/react/vite-vanilla-js.md": [
+    "/assets/vite-vanilla-js.24b6f7b9.js",
+    "/assets/js-doc-implementation.8e6878d3.png",
+    "/assets/type-module.470b9b6a.gif"
+  ],
+  "src/pages/blog/english/vue/creating-our-first-custom-hook.md": [
+    "/assets/creating-our-first-custom-hook.15ac4745.js"
+  ],
+  "src/pages/blog/spanish/react/como-funciona-react.md": [
+    "/assets/como-funciona-react.bf578cac.js"
+  ],
+  "src/pages/about-me.vue?vue&type=style&index=0&scoped=true&lang.postcss": [
+    "/assets/about-me.3fef09d7.js",
+    "/assets/about-me.28738cda.css"
+  ],
+  "src/pages/about-me.vue": [
+    "/assets/about-me.3fef09d7.js",
+    "/assets/about-me.28738cda.css"
+  ]
+}
