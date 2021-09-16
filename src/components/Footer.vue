@@ -18,7 +18,7 @@
                 <a class="net-icon" href="https://github.com/kasec" target="_blank"><img src="/assets/images/icons/github.svg" alt="github picture"></a>
                 <a class="net-icon" href="https://gitlab.com/galfan" target="_blank"><img src="/assets/images/icons/gitlab.webp" alt="gitlab picture"></a>
             </div>
-            <p class="main-text -small">© 2020-present Gelacio Azael Fernandez Aldava. All Rights Reserved.</p>
+            <p class="main-text -small">© 2021-present Gelacio Azael Fernandez Aldava. All Rights Reserved.</p>
         </label>
     </footer>
 </template>
