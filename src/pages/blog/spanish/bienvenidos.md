@@ -2,7 +2,8 @@
 title: Bienvenidos a mi primer post
 meta:
   - name: description
-    content: En este momento estare escribiendo mis primeras palabras como blogger en una cuenta personal.
+    content: En este momento estare escribiendo mis primeras palabras como blogger en una cuenta personal
+date: 2020-02-02
 ---
 
 # Bienvenidos!
@@ -22,28 +23,30 @@ En este momento me he tardado un poco en subir sobre blogs y temas relacionado a
 {
   "skills": [
     "Keeping learner"
-    "Avoid information overwhelming",    
-  ], 
+    "Avoid information overwhelming",
+  ],
   "specialty": [
     "Web Developer",
     "Fullstack JS",
   ],
 }
 ```
+
 <br>
 
-``` js
+```js
 // contact js file
 const contactCard = function (bar) {
-  const email = "gazaelfernandez@gmail.com"
-  
+  const email = "gazaelfernandez@gmail.com";
+
   return { email };
 };
 ```
+
 <br>
 
-Estare subiendo algunas veces pedazos de codigo, investigaciones,  asi como algunas noticias todo acerca de web development, TI u alguna cosita extra.
+Estare subiendo algunas veces pedazos de codigo, investigaciones, asi como algunas noticias todo acerca de web development, TI u alguna cosita extra.
 
 Igual te recomiendo mantenerte en contacto conmigo :-D
 
-> Dale clic/tap al footer.  ;)
+> Dale clic/tap al footer. ;)

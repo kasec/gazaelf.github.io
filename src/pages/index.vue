@@ -3,9 +3,11 @@
         <post-container :categories="['blog', 'thoughts']"></post-container>
     </main>
 </template>
-<script setup>
+<script setup lang="ts">
 import { useHead } from '@vueuse/head'
-
+import postContainer from '../components/post-container/index.vue'
+    console.log('starting server');
+    
     useHead({
         // Can be static or computed
         title: "Welcome to Azael Landing",

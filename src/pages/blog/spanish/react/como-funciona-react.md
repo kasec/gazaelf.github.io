@@ -1,41 +1,43 @@
 ---
-title: como funciona react por detras, aqui te lo explicamos.
+title: Como funciona react por detras, aqui te lo explicamos.
 meta:
   - name: description
     content: En este blog hablare sobre como funciona React, asi algunos trucos para "salvar" performance, por que renderean todos los elementos?, como evitarlo, asi como algunas cosas de useMemo y useCallback (memoization)
+date: 2020-09-02
 ---
+
 # Como funciona exactamente React
 
 ## Como hace **React** para renderear sus componentes asi como tambien como utilizar `useCallback` y `useMemo`
-
 
 > **Para comprender este blog**, doy por hecho ya que tienes un conocimiento minimo sobre el api de React.
 
 ## Overview
 
-Como *React* es aparemente muy rapido, ***re-renderea*** los componentes hijos cada vez que una accion en especifico es disparada.
+Como _React_ es aparemente muy rapido, **_re-renderea_** los componentes hijos cada vez que una accion en especifico es disparada.
 
 Enseguida mostrare unas piezas de codigo, no te preocupes si no entiendes, tratare de explicarlo sobre la marcha.
 
 ```jsx
 // components/count-button.jsx
-const CountButton = function CountButton({onClick, count, id}: any) {
-	console.log("Rendering [CountButton] with [id] ::", id);
-	
-	useEffect(() => {
-		console.log("[count]", id);
-	}, [count])
+const CountButton = function CountButton({ onClick, count, id }: any) {
+  console.log("Rendering [CountButton] with [id] ::", id);
 
-	useEffect(() => {
-		console.log("[onClick]", id);
-	}, [onClick])
+  useEffect(() => {
+    console.log("[count]", id);
+  }, [count]);
 
-	return <div>
-			<span>id {id}</span>
-			<button onClick={onClick}>{ count.value }</button>
-		</div>
-  
-}
+  useEffect(() => {
+    console.log("[onClick]", id);
+  }, [onClick]);
+
+  return (
+    <div>
+      <span>id {id}</span>
+      <button onClick={onClick}>{count.value}</button>
+    </div>
+  );
+};
 ```
 
 <br/>
@@ -43,43 +45,36 @@ const CountButton = function CountButton({onClick, count, id}: any) {
 ```jsx
 // App.jsx
 function App() {
-	console.log("Rendering [App]");
+  console.log("Rendering [App]");
 
-	const [count1, setCount1] = React.useState({
-		value: 0
-	})
+  const [count1, setCount1] = React.useState({
+    value: 0,
+  });
 
-	const increment1 = () => setCount1(
-		c => ({ 
-			value: c.value + 1 
-		})
-	)
+  const increment1 = () =>
+    setCount1((c) => ({
+      value: c.value + 1,
+    }));
 
-	const [count2, setCount2] = React.useState({
-		value: 0
-	})
+  const [count2, setCount2] = React.useState({
+    value: 0,
+  });
 
-	const increment2 = () => setCount2(
-		c => ({
-			value: c.value + 1
-		})
-	) 
+  const increment2 = () =>
+    setCount2((c) => ({
+      value: c.value + 1,
+    }));
 
-	return (
-	<>
-	  <CountButton
-			id={1}
-			count={count1}
-			onClick={increment1} />
-	  <CountButton
-			id={2}
-			count={count2}
-			onClick={increment2} />
-    </>)
+  return (
+    <>
+      <CountButton id={1} count={count1} onClick={increment1} />
+      <CountButton id={2} count={count2} onClick={increment2} />
+    </>
+  );
 }
 ```
 
-Cuantos **logs** seran mostrados en tus *`devtools`* cada vez que presiones un boton?
+Cuantos **logs** seran mostrados en tus _`devtools`_ cada vez que presiones un boton?
 
 ### SPOILERS!!
 
@@ -100,91 +95,89 @@ Rendering [CountButton] with [id] :: 2
 
 Despues de ver el output de arriba surgen varias preguntas.
 
-Como mencione arriba, React renderea todos los componentes hijos sin importar que estos no tengan ninguna ***dependencia/prop*** directa del padre, esto no sabemos por que lo hace React pero debe de tener alguna razon.
+Como mencione arriba, React renderea todos los componentes hijos sin importar que estos no tengan ninguna **_dependencia/prop_** directa del padre, esto no sabemos por que lo hace React pero debe de tener alguna razon.
 
-Algunos autores mencionan que no hay ninguna razon para temerle a esto ya que React es sumamente *rapido*, para que esto cause algun problema.
+Algunos autores mencionan que no hay ninguna razon para temerle a esto ya que React es sumamente _rapido_, para que esto cause algun problema.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I rarely use these React performance features:<br><br>React.memo<br>useCallback<br>useMemo<br><br>If I have a performance issue, I usually find I made a mistake or am using a component that merely needs optimized.<a href="https://twitter.com/hashtag/react?src=hash&amp;ref_src=twsrc%5Etfw">#react</a></p>&mdash; Cory House (@housecor) <a href="https://twitter.com/housecor/status/1358791451665178634?ref_src=twsrc%5Etfw">February 8, 2021</a></blockquote> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I rarely use these React performance features:<br><br>React.memo<br>useCallback<br>useMemo<br><br>If I have a performance issue, I usually find I made a mistake or am using a component that merely needs optimized.<a href="https://twitter.com/hashtag/react?src=hash&amp;ref_src=twsrc%5Etfw">#react</a></p>&mdash; Cory House (@housecor) <a href="https://twitter.com/housecor/status/1358791451665178634?ref_src=twsrc%5Etfw">February 8, 2021</a></blockquote>
 
 > Si gustas puedes leer el [post de Kent](https://kentcdodds.com/blog/usememo-and-usecallback), para conocer mas del tema.
 
 Quedan 2 preguntas por resolver.
 
 1. Se puede evitar la renderizacion de elementos no dependientes?
-2. Porque el `onClick` *prop* lo marca como que esta cambiando el valor?
-
+2. Porque el `onClick` _prop_ lo marca como que esta cambiando el valor?
 
 ## Se puede evitar la renderizacion de elementos no dependientes?
 
 La respuesta a esto es **SI**, si se puede, en seguida muestro como.
 `
+
 ```jsx
 // components/count-button.jsx
-const CountButton = React.memo(function CountButton({onClick, count, id}: any) {
-	console.log("Rendering [CountButton] with [id] ::", id);
-	
-	useEffect(() => {
-		console.log("[count]", id);
-	}, [count])
+const CountButton = React.memo(function CountButton({
+  onClick,
+  count,
+  id,
+}: any) {
+  console.log("Rendering [CountButton] with [id] ::", id);
 
-	useEffect(() => {
-		console.log("[onClick]", id);
-	}, [onClick])
+  useEffect(() => {
+    console.log("[count]", id);
+  }, [count]);
 
-	return <div>
-			<span>id {id}</span>
-			<button onClick={onClick}>{ count.value }</button>
-		</div>
-  
+  useEffect(() => {
+    console.log("[onClick]", id);
+  }, [onClick]);
+
+  return (
+    <div>
+      <span>id {id}</span>
+      <button onClick={onClick}>{count.value}</button>
+    </div>
+  );
 });
 ```
 
 Notas la diferencia en el codigo de arriba?
 
-[React.memo](https://reactjs.org/docs/react-api.html#reactmemo), es un ***high order component***, el cual envuelve tu componente y [memoriza](https://en.wikipedia.org/wiki/Memoization) tu componente lo cual permite que no este cambiando/rendereando cada vez que el padre dispara un evento, sino solo si sus props cambian.
+[React.memo](https://reactjs.org/docs/react-api.html#reactmemo), es un **_high order component_**, el cual envuelve tu componente y [memoriza](https://en.wikipedia.org/wiki/Memoization) tu componente lo cual permite que no este cambiando/rendereando cada vez que el padre dispara un evento, sino solo si sus props cambian.
 
 Aunque con esto no es suficiente ya que el `onClick` prop siempre esta cambiando, esto nos lleva a la siguiente pregunta.
 
-## Porque el `onClick` *prop* lo marca como que esta cambiando el valor?
+## Porque el `onClick` _prop_ lo marca como que esta cambiando el valor?
 
 La respuesta es simple, veamos el codigo de `App.jsx` otra vez.
 
 ```jsx
 // App.jsx
 function App() {
-	console.log("Rendering [App]");
+  console.log("Rendering [App]");
 
-	const [count1, setCount1] = React.useState({
-		value: 0
-	})
+  const [count1, setCount1] = React.useState({
+    value: 0,
+  });
 
-	const increment1 = () => setCount1(
-		c => ({ 
-			value: c.value + 1 
-		})
-	)
+  const increment1 = () =>
+    setCount1((c) => ({
+      value: c.value + 1,
+    }));
 
-	const [count2, setCount2] = React.useState({
-		value: 0
-	})
+  const [count2, setCount2] = React.useState({
+    value: 0,
+  });
 
-	const increment2 = () => setCount2(
-		c => ({
-			value: c.value + 1
-		})
-	) 
+  const increment2 = () =>
+    setCount2((c) => ({
+      value: c.value + 1,
+    }));
 
-	return (
-	<>
-	  <CountButton
-			id={1}
-			count={count1}
-			onClick={increment1} />
-	  <CountButton
-			id={2}
-			count={count2}
-			onClick={increment2} />
-    </>)
+  return (
+    <>
+      <CountButton id={1} count={count1} onClick={increment1} />
+      <CountButton id={2} count={count2} onClick={increment2} />
+    </>
+  );
 }
 ```
 
@@ -196,9 +189,7 @@ Ahora que ya sabemos que es lo que causa la renderizacion aun teniendo `React.me
 
 Lo que usaremos a continuacion para que no cambie el datos sera memoization lo cual usamos arriba.
 
-React tiene dos hooks que podemos utilizar aqui `useMemo` y `useCallback`, en este caso usaremos `useCallback`. Estos hooks los que hacen principalmente es *memorizar* el valor y no lo cambian siempre y cuando alguna dependencia como tal cambie, esto evita que *computaciones complejas se esten ejecutando en cada renderizacion*. En este caso nosotros la utilizaremos para que nuestros componentes hijos se rendericen cuando sea nesesario.
-
-
+React tiene dos hooks que podemos utilizar aqui `useMemo` y `useCallback`, en este caso usaremos `useCallback`. Estos hooks los que hacen principalmente es _memorizar_ el valor y no lo cambian siempre y cuando alguna dependencia como tal cambie, esto evita que _computaciones complejas se esten ejecutando en cada renderizacion_. En este caso nosotros la utilizaremos para que nuestros componentes hijos se rendericen cuando sea nesesario.
 
 ```jsx
 // App.jsx
@@ -207,8 +198,8 @@ function App() {
 	const [count2, setCount2] = React.useState(...)
 
 	const increment1 = React.useCallback(() => setCount1(
-		c => ({ 
-			value: c.value + 1 
+		c => ({
+			value: c.value + 1
 		})
 	), [])
 
@@ -220,8 +211,8 @@ function App() {
 	), [])
 
 	return (
-		<> 
-			... 
+		<>
+			...
 		</>
 	)
 }
@@ -246,9 +237,8 @@ Que es lo que vimos?
 - Memoization.
 - `useCallback` React Hook.
 
-
 # Bonus
 
 Si llegaste hasta aqui, gracias por leer este post, espero y te haya resultado de bastante ayuda.
 
-Igual si tienes alguna observacion y/o duda puedes contactarme en alguna de mis redes sociales, que estan abajo(solo dale clic/tap al footer), me gustaria saber que piensas que y con gusto cuando tenga tiempo te respondere. 
+Igual si tienes alguna observacion y/o duda puedes contactarme en alguna de mis redes sociales, que estan abajo(solo dale clic/tap al footer), me gustaria saber que piensas que y con gusto cuando tenga tiempo te respondere.
