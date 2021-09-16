@@ -26,9 +26,10 @@
                                 <span class="bg-red-600 text-white text-sm font-medium p-1 rounded-sm mx-1.5" v-for="tag in post.tags">
                                     {{ tag }}
                                 </span>
+                                <span v-if="post.status === 'WIP'" class="bg-blue-700 text-white text-sm font-medium p-1 rounded-sm mx-1.5"> Work in Progress</span>
                             </div>
                             <p class="italic bg-gray-400 bg-opacity-50 px-3">
-                                -- {{ post.date }}
+                                -- {{ new Date(post.date).toLocaleString('en-US', dateOptions) }}
                             </p>
                         </div>
                     </article>
@@ -39,15 +40,19 @@
 </main>
 </template>
 
-<script setup>
+<script setup lang="ts">
 
 import { defineProps, ref } from 'vue'
-import postManifest from '../../content.json'
 import { handleModules } from '../../utils/handle-modules'
+import { postMeta } from '@my-virtual-file'
+
 
 const files = import.meta.glob('/src/pages/(blog|thoughts)/**/*.(vue|md)')
-const [ modules, tags ] = handleModules(files, postManifest)
-
+console.log({ files })
+const [ modules, tags ] = handleModules(files, postMeta)
+const sortByDate = (array) => array.sort(function(a,b){
+  return new Date(b.date) - new Date(a.date);
+});
 const props = defineProps({
     categories: [String, Array],
     format: [String, Array]
@@ -57,10 +62,12 @@ const getCategories = (categories) => {
     const newCategories = [ categories || "blog" ].flatMap(item => item) 
     return newCategories 
 }
+
 const getPostsByCategories = (modules = [], categories = []) => modules.filter(({ category }) => categories.includes(category))
 
 const initialCategories = getCategories(props.categories) || []
-const initialPosts = getPostsByCategories(modules, initialCategories) || []
+
+const initialPosts = sortByDate(getPostsByCategories(modules, initialCategories) || [])
 
 const categories = ref(initialCategories)
 const posts = ref(initialPosts)
@@ -85,7 +92,7 @@ const setPostByCategory = (category) => {
         }
     }
 }
-
+const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 </script>
 
 <style lang="postcss" scoped>
